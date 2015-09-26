@@ -1,0 +1,25 @@
+{
+  "name": "text2token",
+  "version": "1.0.0",
+  "description": "break down corpus of text into words/tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accraze/text2token.git"
+  },
+  "keywords": [
+    "text",
+    "strings",
+    "tokens",
+    "nlp"
+  ],
+  "author": "accraze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accraze/text2token/issues"
+  },
+  "homepage": "https://github.com/accraze/text2token"
+}
