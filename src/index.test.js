@@ -7,7 +7,9 @@ describe('text2token', function(){
 
     expect(conversion.tokens).to.be.an('array');
     expect(conversion.tokens).to.have.length(109);
-    console.log(conversion.lines);
+    expect(conversion.tokens).to.include('GitHub,');
+
+    expect(conversion.tokens).to.be.an('array');
     expect(conversion.lines).to.have.length(5116);
     expect(conversion.lines).to.include('gubergren');
   });

@@ -1,5 +1,5 @@
 # text2token
-break down corpus of text into lines and tokens
+is a nodejs module that breaks down a corpus of text into lines and tokens.
 
 ## Useage
 ```

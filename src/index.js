@@ -25,6 +25,11 @@ function text2token(textFile) {
         tokens = [];
 
     var fs = require('fs');
+    
+    if (textFile == '' || textFile == undefined) {
+        throw new Error('path is required');
+    }
+
     var lines = fs.readFileSync(textFile).toString().split("\n");
 
     for (var i = 0; i < lines.length; i++) {
