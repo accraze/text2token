@@ -1,7 +1,7 @@
 {
   "name": "text2token",
   "description": "break down corpus of text into words/tokens",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js -w ",
     "test:single": "istanbul cover -x *.test.js _mocha src/index.test.js",
