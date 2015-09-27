@@ -1,10 +1,11 @@
 {
   "name": "text2token",
-  "version": "1.0.0",
   "description": "break down corpus of text into words/tokens",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w ",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/accraze/text2token/issues"
   },
-  "homepage": "https://github.com/accraze/text2token"
+  "homepage": "https://github.com/accraze/text2token",
+  "devDependencies": {
+    "chai": "3.3.0",
+    "commitizen": "1.0.4",
+    "cz-conventional-changelog": "1.1.1",
+    "mocha": "2.3.3",
+    "semantic-release": "^4.3.5"
+  },
+    "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
 }
