@@ -1,23 +1,5 @@
-
 module.exports = {
     text2token: text2token
-}
-
-Array.prototype.contains = function(v) {
-    for(var i = 0; i < this.length; i++) {
-        if(this[i] === v) return true;
-    }
-    return false;
-};
-
-Array.prototype.unique = function() {
-    var arr = [];
-    for(var i = 0; i < this.length; i++) {
-        if(!arr.contains(this[i])) {
-            arr.push(this[i]);
-        }
-    }
-    return arr; 
 }
 
 function text2token(textFile) {
@@ -25,7 +7,7 @@ function text2token(textFile) {
         tokens = [];
 
     var fs = require('fs');
-    
+
     if (textFile == '' || textFile == undefined) {
         throw new Error('path is required');
     }
@@ -41,5 +23,25 @@ function text2token(textFile) {
 
     tokens = tokens.unique();
 
-    return {lines: lines, tokens:tokens}
+    return {
+        lines: lines,
+        tokens: tokens
+    }
+}
+
+Array.prototype.contains = function(v) {
+    for (var i = 0; i < this.length; i++) {
+        if (this[i] === v) return true;
+    }
+    return false;
+};
+
+Array.prototype.unique = function() {
+    var arr = [];
+    for (var i = 0; i < this.length; i++) {
+        if (!arr.contains(this[i])) {
+            arr.push(this[i]);
+        }
+    }
+    return arr;
 }
