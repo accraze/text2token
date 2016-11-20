@@ -34,7 +34,8 @@
         "codecov.io": "0.1.6",
         "istanbul": "0.3.20",
         "ghooks": "0.3.2",
-        "semantic-release": "^4.3.5"
+        "semantic-release": "^4.3.5",
+        "n-readlines": "0.2.7"
     },
     "czConfig": {
         "path": "node_modules/cz-conventional-changelog"
