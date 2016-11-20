@@ -7,6 +7,12 @@
 ## text2token
 is a nodejs module that breaks down a corpus of text into lines and tokens.
 
+## Install
+
+```
+$ npm install text2token
+```
+
 ## Usage
 The module has one method: `text2token`, which returns an object that contains a list of each `line` in your text file, as well as a list of all unique `tokens`.
 ```
@@ -34,4 +40,4 @@ $ node
  .......
 ```
 
-MIT License 2015 © Andy Craze
+MIT License 2015-2016 © Andy Craze & Contributors
